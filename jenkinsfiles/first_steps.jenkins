@@ -13,12 +13,12 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'echo \'hello world\' > newfile1111'
+                sh 'pwd'
             }
         }
         stage("Second step") {
             steps {
-                sh 'echo \'hello world\''
+                sh 'touch \'newdir\''
             }
         }
     }
